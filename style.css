@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  background-color: #f7fafc;
+  color: #1f2937;
+  line-height: 1.8;
+}
+
+
+/* القائمة */
+
+header {
+  background-color: #ffffff;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  color: #374151;
+  margin-right: 20px;
+}
+
+
+/* القسم الرئيسي */
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #eaf5ff;
+}
+
+.hero h1 {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.hero h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: auto;
+}
+
+
+/* الزر */
+
+.button,
+button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #2563eb;
+  color: white;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+
+/* الأقسام */
+
+section {
+  padding: 70px 10%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+/* بطاقات التحاليل */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 22px;
+}
+
+.card h4 {
+  margin-bottom: 15px;
+}
+
+
+/* النصائح */
+
+.tips {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.tips-list {
+  margin-top: 30px;
+}
+
+
+/* الأسئلة */
+
+.faq {
+  max-width: 900px;
+  margin: auto;
+}
+
+.question {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+
+/* التنبيه */
+
+.warning {
+  background-color: #fff7ed;
+  text-align: center;
+}
+
+
+/* الفوتر */
+
+footer {
+  background-color: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+
+/* الجوال */
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  nav a {
+    margin: 5px;
+  }
+
+}
